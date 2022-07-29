@@ -30,6 +30,7 @@ user.on('friendRelationship', (steamID, relationship) => {
     if (relationship === SteamUser.EFriendRelationship.RequestRecipient) {
         user.addFriend(steamID);
         console.log('Accepted friend request from ' + steamID);
+        user.chatMessage(steamID, 'Hi, na? Join unserem Discord https://discord.gg/jc6Ygk9 und schau mal vorbei!');
     }
 });
 
